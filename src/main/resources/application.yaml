@@ -6,10 +6,18 @@ spring:
     username: root
     password: P@ssword
 
-  jpa:
-    show-sql: true
+  #jpa:
+  #  show-sql: true
 
   mvc:
    hiddenmethod:
     filter:
      enabled: true
+
+logging:
+  level:
+    root: INFO
+    com.elkabani.db_demo: DEBUG
+    org.hibernate.SQL: DEBUG
+  file:
+    name: logs/db_demo.log
