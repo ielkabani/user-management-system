@@ -89,7 +89,7 @@ public class UserService {
         if (oldPassword.equals(newPassword))
             throw new WeakPasswordException("New password must be different from current password");
 
-        if (newPassword == null || newPassword.length() < 8)
+        if (newPassword == null || newPassword.length() < 6)
             throw new WeakPasswordException("Password must be at least 8 characters long");
 
         if (!newPassword.matches(".*[A-Z].*"))
