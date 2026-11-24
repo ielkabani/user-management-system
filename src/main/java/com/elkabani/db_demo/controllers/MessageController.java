@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MessageController {
-/*    @RequestMapping("/message")
+   @RequestMapping("/message")
     public Message sayMessage()
     {
         return new Message("Hello from Spring Boot!");
 
     }
-*/
+
 }
